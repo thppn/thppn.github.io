@@ -1,0 +1,11 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+h1 {
+    width: auto;
+    font-size: 5em;
+}
