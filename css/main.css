@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    overflow: hidden;
+    height: 100%;
 }
 h1 {
     width: auto;
