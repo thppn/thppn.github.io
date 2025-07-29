@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Support Group",
+        "description": "Provided support for students in the CSE Department.",
+        "technologies": ["Support", "Linux"],
+        "link": "https://support.cse.uoi.gr",
+        "date": "2017 - 2018"
+    },
+    {
+        "title": "iGEM Ioannina",
+        "description": "Participated in the iGEM competition, focusing on synthetic biology and web development.",
+        "technologies": ["Synthetic Biology", "Web development"],
+        "link": "https://igemioannina.unit.uoi.gr",
+        "date": "2020 - 2021"
+    },
+    {
+        "title": "Internship @ ARROW",
+        "date": "2021 & 2023",
+        "description": "Assisted in surveying and data collection for a project.",
+        "technologies": ["Surveying", "Data Collection"]
+    }
+]

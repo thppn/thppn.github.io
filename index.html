@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/particles.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/particles.css">
+	<link rel="stylesheet" href="styles/timeline.css">
+	<link rel="stylesheet" href="styles/projects.css">
+	<title>Thanos Papanastasiou</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-
-    <title>thppn</title>
+	<link rel="icon" href="images/logo.ico">
 </head>
 <body>
-    <main>
-        <h1 class="uc"></h1>
-    </main>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="images/logo.png" alt="Logo" class="navbar-logo">
+            <span class="navbar-title">Thanos Papanastasiou</span>
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="#" onclick="showPage(0)">Home</a></li>
+            <li><a href="#" onclick="showPage(1)">Projects</a></li>
+            <li><a href="#" onclick="showPage(2)">Timeline</a></li>
+        </ul>
+    </nav>
 	<div id="particles-js"></div>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
+	<!-- <header>
+		<div class="head">
+			<img alt="igem logo" id="logo" src="images/logo.png">
+			<div class="title">
+				<h1>Thanos Papanastasiou</h1>
+				<h4>Software Engineer</h4>
+			</div>
+		</div>
+	</header> -->
+	<main>
+		<div class="page" style="opacity:1;">
+			<h2 class="welcome"></h2>
+			<div class="welcome-message">
+				<div class="text-container project-card">
+					<p>I'm Thanos, a software engineer and open source enthusiast</p>
+					<p>Here you can find some of my projects, my timeline and a bit about me</p>
+				</div>
+			</div>
+		</div>
+		<div class="bg page" style="opacity:0;">
+			<h2>Projects</h2>
+			<div id="projects" class="projects"></div>
+		</div>
+		<div class="bg page" style="opacity:0;">
+			<h2>Timeline</h2>
+			<ul id="timeline" class="timeline"></ul>
+		</div>
+	</main>
+    <script src="js/particles/particles.min.js"></script>
+    <script src="js/particles/app.js"></script>
+    <script src="js/projects.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/typed.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/navbar.js"></script>
+    <footer class="site-footer">
+        &copy; 2025 thppn
+    </footer>
 </body>
+</html>

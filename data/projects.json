@@ -1,0 +1,47 @@
+[
+  {
+    "name": "The Odin Project",
+    "description": "A comprehensive web development curriculum that covers HTML, CSS, JavaScript, Git, and more.",
+    "demo": "https://thppn.github.io/the_odin_project/",
+    "repo": "https://github.com/thppn/the_odin_project"
+  }
+,
+
+  {
+    "name": "telescope",
+    "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
+    "demo": "",
+    "repo": ""
+  }
+,
+
+  {
+    "name": "ppp",
+    "description": "An objected oriented programming language designed for educational purposes with ANTLR",
+    "demo": "https://thppn.github.io/ppp",
+    "repo": "https://github.com/thppn/ppp"
+  }
+,
+
+  {
+    "name": "iGEM Ioannina 2021",
+    "description": "All the resources for the iGEM competition 2020-2021, focusing on synthetic biology and web development.",
+    "demo": "https://thppn.github.io/igem",
+    "repo": "https://github.com/thppn/igem"
+  }
+,
+
+  {
+    "name": "Java Projects",
+    "description": "A collection of Java projects demonstrating various programming concepts and techniques.",
+    "demo": "",
+    "repo": ""
+  },
+  {
+    "name": "AI projects",
+    "description": "Various projects related to artificial intelligence including machine learning",
+    "demo": "",
+    "repo": "https://github.com/thppn/ai"
+  }
+
+]
