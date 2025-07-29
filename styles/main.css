@@ -243,6 +243,7 @@ justify-content: center;
         width: 100%;
         padding: 1rem 0.5rem;
         font-size: 0.98rem;
+        margin-bottom: 1.2rem; /* Add this line for spacing */
     }
     .text-container {
         margin: 1rem 0.2rem;
