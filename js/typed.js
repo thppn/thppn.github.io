@@ -1,4 +1,4 @@
-var options = {
+var welcome_options = {
     strings: welcome_translations = [
     "Καλώς ήρθατε",
     "Welcome",
@@ -76,4 +76,4 @@ var options = {
     loop: true
   };
   
-  var typed = new Typed('.welcome', options);
+  var typed = new Typed('.welcome', welcome_options);
