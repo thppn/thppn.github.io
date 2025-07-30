@@ -76,10 +76,9 @@ a {
 }
 
 .project-card {
-
 	flex: 1 1 300px; /* Grow, shrink, base width */
 	max-width: 100%;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem 0 1.5rem;
 	transition: transform 0.2s;
 	background-color: rgba(210, 210, 210, 0.7);
 	border-radius: 0.2rem;
@@ -232,7 +231,7 @@ a {
     .page, .bg {
         width: 100vw;
         min-width: 0;
-        padding: 0.5rem 0.2rem;
+        padding: 0.5rem 0.2rem 2rem 0.2rem;
         box-sizing: border-box;
     }
     .projects {
