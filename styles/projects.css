@@ -1,4 +1,3 @@
-
 a {
   list-style: none;
 
@@ -6,8 +5,8 @@ a {
 .project-links a {
   position: relative;
   display: block;
-  margin: 20px 0;
-  padding: 10px 20px;
+  margin: 1.25rem 0;
+  padding: 0.625rem 1.25rem;
   text-decoration: none;
   transition: .5s;
   z-index: 1;
@@ -19,8 +18,8 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  border-top: 2px solid #262626;
-  border-bottom: 2px solid #262626;
+  border-top: 0.125rem solid #262626;
+  border-bottom: 0.125rem solid #262626;
   transform: scaleY(2);
   opacity: 0;
   transition: .3s;
@@ -28,7 +27,7 @@ a {
 .project-links a:after {
   content: '';
   position: absolute;
-  top: 2px;
+  top: 0.125rem;
   left: 0;
   width: 100%;
   height: 100%;

@@ -61,6 +61,8 @@ a {
 .welcome {
 	min-height: 2em; /* Prevent shifting */
 	font-family: 'acvarela', 'Noto Sans', 'Segoe UI', 'Arial Unicode MS', 'DejaVu Sans', sans-serif;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 .projects {
@@ -91,6 +93,7 @@ a {
 	font-size: 1.2rem;
 
 }
+
 .project-links {
 	display: flex;
 	flex-wrap: wrap;
@@ -124,6 +127,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 .navbar-brand {
     display: flex;
@@ -135,9 +139,10 @@ a {
     width: 3rem;
     border-radius: 0.3rem;
     filter: invert(1); /* Invert logo colors */
+    margin: 0.5rem;
 }
 .navbar-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -211,13 +216,14 @@ a {
     }
     .navbar-toggle {
         display: flex;
+        margin: 1rem;
     }
     .navbar-title {
         font-size: 1rem;
     }
     .navbar-logo {
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 3rem;
+        width: 3rem;
     }
     .site-footer {
         font-size: 0.8rem;
@@ -244,24 +250,22 @@ a {
         font-size: 2.2rem;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        text-shadow: 1px 1px 1px black;
     }
     h3 {
         font-size: 1.1rem;
     }
     .welcome {
-        font-size: 1.1rem;
+        font-size: 2rem;
+        text-shadow: 1px 1px 2px black;
     }
 }
 
 /* Optional: for very small screens */
 @media (max-width: 500px) {
     .navbar-title {
-        font-size: 0.9rem;
-    }
-    .navbar-logo {
-        height: 1.5rem;
-        width: 1.5rem;
+        font-size: 1.2rem;
     }
     .site-footer {
         font-size: 0.7rem;
