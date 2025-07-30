@@ -64,13 +64,13 @@ a {
 }
 
 .projects {
-display: flex;
-flex-wrap: wrap;
-gap: 1.5rem;
-padding: 1.5rem;
-max-width: 75rem;
-margin: auto;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 75rem;
+    margin: auto;
+    justify-content: center;
 }
 
 .project-card {
@@ -90,9 +90,6 @@ justify-content: center;
 	margin: 0 0 0.5rem 0;
 	font-size: 1.2rem;
 
-}
-.project-desc {
-	margin: 0 0 1rem 0;
 }
 .project-links {
 	display: flex;
@@ -237,13 +234,6 @@ justify-content: center;
         gap: 1rem;
         padding: 0.5rem;
         max-width: 100vw;
-    }
-    .project-card {
-        min-width: 0;
-        width: 100%;
-        padding: 1rem 0.5rem;
-        font-size: 0.98rem;
-        margin-bottom: 1.2rem; /* Add this line for spacing */
     }
     .text-container {
         margin: 1rem 0.2rem;
