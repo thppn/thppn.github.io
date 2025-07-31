@@ -99,7 +99,7 @@ span {
   display: flex;
   justify-content: center;  
   align-items: center;      
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: rgba(230, 230, 230, 0.8);
   z-index: 1;
 }
 .project-image img {
