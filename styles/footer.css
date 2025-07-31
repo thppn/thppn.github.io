@@ -1,0 +1,91 @@
+.site-footer {
+    width: 100%;
+    height: 1.7rem;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0.3rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+.site-footer ul {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.site-footer ul li {
+  list-style: none;
+  margin: 0.5rem;
+  line-height: 1.7rem;
+
+}
+
+.site-footer ul li a {
+  margin: 0;
+  padding: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.6rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.site-footer ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.site-footer ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: .5s;
+  z-index: 2;
+}
+
+.site-footer ul li a:hover:before {
+  top: 0;
+}
+
+.site-footer ul li:nth-child(2) a:before{
+  background: #3b5999;
+}
+
+.site-footer ul li:nth-child(3) a:before{
+  background: #7785cc;
+}
+
+.site-footer ul li:nth-child(4) a:before {
+  background: #0077b5;
+}
+
+.site-footer ul li:nth-child(5) a:before {
+  background: black;
+}
