@@ -34,10 +34,10 @@
     "description": "A comprehensive web development curriculum that covers HTML, CSS, JavaScript, Git, and more.",
     "demo": "https://thppn.github.io/the_odin_project/",
     "repo": "https://github.com/thppn/the_odin_project",
-    "tags": ["HTML", "CSS", "JavaScript"],
+    "tags": ["Frontend", "Pair", "Git"],
     "year": 2019,
     "img": "https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/logo.svg?raw=true",
-    "lang": ["Frontend", "Pair", "Git"]
+    "lang": ["HTML", "CSS", "JavaScript"]
   },
   {
     "name": "telescope",
