@@ -48,7 +48,7 @@
     "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
     "demo": "https://github.com/thppn/telescope",
     "repo": "https://github.com/thppn/telescope",
-    "tags": ["antlr4-python3","compilers","turing-machines"],
+    "tags": ["antlr4-python3","turing-machines"],
     "year": 2024,
     "img": "https://github.com/thppn/telescope/blob/main/telescope.png?raw=true",
     "lang": []
