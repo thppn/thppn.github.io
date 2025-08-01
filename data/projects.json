@@ -40,6 +40,16 @@
     "lang": ["HTML", "CSS", "JavaScript"]
   },
   {
+    "name": "minimal++",
+    "description": "A simple programming language for MIPS designed for educational purposes",
+    "demo": "https://github.com/thppn/minimalpp",
+    "repo": "https://github.com/thppn/minimalpp",
+    "tags":  ["Compilers", "MIPS", ""],
+    "year": 2020,
+    "img": "https://github.com/thppn/minimalpp/blob/main/doc/minimal++.png?raw=true",
+    "lang": ["Python", "Assembly"]
+  },
+  {
     "name": "telescope",
     "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
     "demo": "https://github.com/thppn/telescope",
