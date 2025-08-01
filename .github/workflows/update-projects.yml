@@ -39,7 +39,12 @@ jobs:
               name="$repo_name"
             fi
             img=$(curl -s "$readme_url" | sed -n '2p' | perl -nle 'print $1 if /<!--\s*(http[^ ]*)\s*-->/')
+            year=$(curl -s "$readme_url" | sed -n '3p' | perl -nle 'print $1 if /<!--\s*(.*?)\s*-->/')
 
+            if [ -z "$year" ]; then
+              created_at=$(_jq '.created_at')
+              year=$(date -d "$created_at" +%Y)
+            fi
 
             gh_pages_url="https://$USERNAME.github.io/$repo_name"
             if curl -s --head "$gh_pages_url" | grep "200 OK" > /dev/null; then
@@ -65,6 +70,7 @@ jobs:
             echo "    \"demo\": \"$demo\"," >> data/projects1.json
             echo "    \"repo\": \"$repo_url\"," >> data/projects1.json
             echo "    \"tags\": $tags," >> data/projects1.json
+            echo "    \"year\": $year," >> data/projects1.json
             echo "    \"img\": \"$img\"," >> data/projects1.json
             echo "    \"lang\": $langs" >> data/projects1.json
             echo "  }" >> data/projects1.json
