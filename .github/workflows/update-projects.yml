@@ -1,0 +1,25 @@
+name: Test JSON Update
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Write simple JSON
+      run: |
+        mkdir -p data
+        echo '{ "message": "Hello, world!" }' > data/projects1.json
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add data/projects.json
+        git commit -m "Test: Update data/projects.json with Hello, world!" || echo "No changes"
+        git push
