@@ -1,6 +1,6 @@
 [
   {
-    "name": "AI projects",
+    "name": "AI projects <!-- https://github.com/thppn/ai/blob/main/ai.png?raw=true -->",
     "description": "Various projects related to artificial intelligence including machine learning",
     "demo": "https://github.com/thppn/ai",
     "repo": "https://github.com/thppn/ai",
@@ -11,18 +11,18 @@
   }
 ,
   {
-    "name": "iGEM Ioannina 2021",
+    "name": "iGEM Ioannina 2021 <!-- https://github.com/thppn/igem/blob/main/website/img/igem.gif?raw=true -->",
     "description": "All the resources for the iGEM competition 2020-2021, focusing on synthetic biology and web development.",
     "demo": "https://thppn.github.io/igem/",
     "repo": "https://github.com/thppn/igem",
-    "tags": ["css","html","javascript"],
+    "tags": ["biology","frontend"],
     "year": 2025,
     "img": "https://github.com/thppn/igem/blob/main/igem.png?raw=true",
     "lang": ["CSS","HTML","JavaScript","SCSS"]
   }
 ,
   {
-    "name": "minimal++",
+    "name": "minimal++ <!-- https://github.com/thppn/minimalpp/blob/main/doc/minimal++.png?raw=true -->",
     "description": "A simple programming language for MIPS designed for educational purposes",
     "demo": "https://github.com/thppn/minimalpp",
     "repo": "https://github.com/thppn/minimalpp",
@@ -33,7 +33,7 @@
   }
 ,
   {
-    "name": "ppp",
+    "name": "ppp <!-- https://github.com/thppn/ppp/blob/main/ppp.png?raw=true -->",
     "description": "An objected oriented programming language designed for educational purposes with ANTLR",
     "demo": "https://github.com/thppn/ppp",
     "repo": "https://github.com/thppn/ppp",
@@ -44,18 +44,18 @@
   }
 ,
   {
-    "name": "telescope",
+    "name": "telescope <!-- https://github.com/thppn/telescope/blob/main/logo.png?raw=true -->",
     "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
     "demo": "https://github.com/thppn/telescope",
     "repo": "https://github.com/thppn/telescope",
-    "tags": [],
+    "tags": ["antlr4-python3","compilers","turing-machines"],
     "year": 2025,
     "img": "https://github.com/thppn/telescope/blob/main/telescope.png?raw=true",
     "lang": []
   }
 ,
   {
-    "name": "TheOdinProject",
+    "name": "The Odin Project <!-- https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/logo.svg?raw=true -->",
     "description": "A comprehensive web development curriculum that covers HTML, CSS, JavaScript, Git, and more.",
     "demo": "https://thppn.github.io/the_odin_project/",
     "repo": "https://github.com/thppn/the_odin_project",
@@ -66,7 +66,7 @@
   }
 ,
   {
-    "name": "thppn.github.io",
+    "name": "thppn.github.io <!-- https://github.com/thppn/thppn.github.io/blob/main/images/logo.png?raw=true -->",
     "description": "Personal webpage",
     "demo": "https://thppn.github.io/",
     "repo": "https://github.com/thppn/thppn.github.io",
