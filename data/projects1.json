@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ai",
+    "repo": "https://github.com/thppn/ai"
+  },
+  {
+    "name": "igem",
+    "repo": "https://github.com/thppn/igem"
+  },
+  {
+    "name": "minimalpp",
+    "repo": "https://github.com/thppn/minimalpp"
+  },
+  {
+    "name": "ppp",
+    "repo": "https://github.com/thppn/ppp"
+  },
+  {
+    "name": "telescope",
+    "repo": "https://github.com/thppn/telescope"
+  },
+  {
+    "name": "the_odin_project",
+    "repo": "https://github.com/thppn/the_odin_project"
+  },
+  {
+    "name": "thppn.github.io",
+    "repo": "https://github.com/thppn/thppn.github.io"
+  }
+]
