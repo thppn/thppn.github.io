@@ -32,8 +32,6 @@ jobs:
             description=$(_jq '.description')
             repo_url=$(_jq '.html_url')
             homepage=$(_jq '.homepage')
-            created_at=$(_jq '.created_at')
-            year=$(date -d "$created_at" +%Y)
 
             readme_url="https://raw.githubusercontent.com/$USERNAME/$repo_name/main/README.md"
             name=$(curl -s "$readme_url" | grep -m 1 '^# ' | sed 's/^# //')
@@ -41,6 +39,12 @@ jobs:
               name="$repo_name"
             fi
             img=$(curl -s "$readme_url" | sed -n '2p' | perl -nle 'print $1 if /<!--\s*(http[^ ]*)\s*-->/')
+            year=$(curl -s "$readme_url" | sed -n '3p' | perl -nle 'print $1 if /<!--\s*(http[^ ]*)\s*-->/')
+
+            if [ -z "$year" ]; then
+              created_at=$(_jq '.created_at')
+              year=$(date -d "$created_at" +%Y)
+            fi
 
             gh_pages_url="https://$USERNAME.github.io/$repo_name"
             if curl -s --head "$gh_pages_url" | grep "200 OK" > /dev/null; then
