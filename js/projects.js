@@ -25,7 +25,6 @@ fetch(`data/projects.json?nocache=${Date.now()}`)
             <ul>
                 <li>${project.tags[0]}</li>
                 <li>${project.tags[1]}</li>
-                <li>${project.tags[2]}</li>
             </ul>
         </div>
         <div class="project-name">
