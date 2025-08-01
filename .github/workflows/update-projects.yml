@@ -13,12 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate data/projects1.json
+      - name: Generate data/projects.json
         env:
           USERNAME: ${{ github.repository_owner }}
         run: |
           mkdir -p data
-          echo "[" > data/projects1.json
+          echo "[" > data/projects.json
 
           repos=$(curl -s "https://api.github.com/users/$USERNAME/repos?per_page=100")
 
@@ -34,7 +34,7 @@ jobs:
             homepage=$(_jq '.homepage')
 
             readme_url="https://raw.githubusercontent.com/$USERNAME/$repo_name/main/README.md"
-            name=$(curl -s "$readme_url" | grep -m 1 '^# ' | sed 's/^# //')
+            name=$(curl -s "$readme_url" | grep -m 1 '^# ' | sed 's/^# //' | tr -d '\r')
             if [ -z "$name" ]; then
               name="$repo_name"
             fi
@@ -61,27 +61,27 @@ jobs:
             if [ "$first" = true ]; then
               first=false
             else
-              echo "," >> data/projects1.json
+              echo "," >> data/projects.json
             fi
 
-            echo "  {" >> data/projects1.json
-            echo "    \"name\": \"$name\"," >> data/projects1.json
-            echo "    \"description\": \"$description\"," >> data/projects1.json
-            echo "    \"demo\": \"$demo\"," >> data/projects1.json
-            echo "    \"repo\": \"$repo_url\"," >> data/projects1.json
-            echo "    \"tags\": $tags," >> data/projects1.json
-            echo "    \"year\": $year," >> data/projects1.json
-            echo "    \"img\": \"$img\"," >> data/projects1.json
-            echo "    \"lang\": $langs" >> data/projects1.json
-            echo "  }" >> data/projects1.json
+            echo "  {" >> data/projects.json
+            echo "    \"name\": \"$name\"," >> data/projects.json
+            echo "    \"description\": \"$description\"," >> data/projects.json
+            echo "    \"demo\": \"$demo\"," >> data/projects.json
+            echo "    \"repo\": \"$repo_url\"," >> data/projects.json
+            echo "    \"tags\": $tags," >> data/projects.json
+            echo "    \"year\": $year," >> data/projects.json
+            echo "    \"img\": \"$img\"," >> data/projects.json
+            echo "    \"lang\": $langs" >> data/projects.json
+            echo "  }" >> data/projects.json
           done
 
-          echo "]" >> data/projects1.json
+          echo "]" >> data/projects.json
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/projects1.json
-          git commit -m "Update data/projects1.json" || echo "No changes"
+          git add data/projects.json
+          git commit -m "Update data/projects.json" || echo "No changes"
           git push
