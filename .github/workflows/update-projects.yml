@@ -40,7 +40,7 @@ jobs:
             if [ -z "$name" ]; then
               name="$repo_name"
             fi
-            img=$(echo "$readme_url" | sed -n '2p' | grep -oP '(?<=<!--\s*)http[^ ]*(?=\s*-->)')
+            img=$(curl -s "$readme_url" | sed -n '2p' | grep -oP '(?<=<!--\s*)http[^ ]*(?=\s*-->)')
 
             gh_pages_url="https://$USERNAME.github.io/$repo_name"
             if curl -s --head "$gh_pages_url" | grep "200 OK" > /dev/null; then
