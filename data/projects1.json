@@ -5,7 +5,7 @@
     "demo": "https://github.com/thppn/ai",
     "repo": "https://github.com/thppn/ai",
     "tags": ["kmeans","minimax","minimax-alpha-beta-pruning","mlp","ucs-algorithm"],
-    "year": 2025,
+    "year": 2019,
     "img": "https://github.com/thppn/ai/blob/main/ai.png?raw=true",
     "lang": ["C","Java","Python"]
   }
@@ -16,7 +16,7 @@
     "demo": "https://thppn.github.io/igem/",
     "repo": "https://github.com/thppn/igem",
     "tags": ["biology","frontend"],
-    "year": 2025,
+    "year": 2020,
     "img": "https://github.com/thppn/igem/blob/main/website/img/igem.gif?raw=true",
     "lang": ["CSS","HTML","JavaScript","SCSS"]
   }
@@ -27,7 +27,7 @@
     "demo": "https://github.com/thppn/minimalpp",
     "repo": "https://github.com/thppn/minimalpp",
     "tags": ["compilers","mips-assembly"],
-    "year": 2025,
+    "year": 2020,
     "img": "https://github.com/thppn/minimalpp/blob/main/doc/minimal++.png?raw=true",
     "lang": ["Python"]
   }
@@ -38,7 +38,7 @@
     "demo": "https://github.com/thppn/ppp",
     "repo": "https://github.com/thppn/ppp",
     "tags": ["antlr4-python3","compilers","oop-concepts"],
-    "year": 2025,
+    "year": 2022,
     "img": "https://github.com/thppn/ppp/blob/main/ppp.png?raw=true",
     "lang": ["ANTLR","Python"]
   }
@@ -49,7 +49,7 @@
     "demo": "https://github.com/thppn/telescope",
     "repo": "https://github.com/thppn/telescope",
     "tags": ["antlr4-python3","compilers","turing-machines"],
-    "year": 2025,
+    "year": 2024,
     "img": "https://github.com/thppn/telescope/blob/main/logo.png?raw=true",
     "lang": []
   }
@@ -60,7 +60,7 @@
     "demo": "https://thppn.github.io/the_odin_project/",
     "repo": "https://github.com/thppn/the_odin_project",
     "tags": ["frontend","git","pair-programming"],
-    "year": 2025,
+    "year": 2019,
     "img": "https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/logo.svg?raw=true",
     "lang": ["CSS","HTML","JavaScript"]
   }
