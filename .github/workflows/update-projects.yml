@@ -1,33 +1,83 @@
-name: Update Projects
+name: update-projects
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'  # Every Sunday
 
 jobs:
   update-projects:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Fetch public repos and write minimal JSON
-      env:
-        USERNAME: ${{ github.repository_owner }}
-      run: |
-        mkdir -p data
+      - name: Generate data/projects1.json
+        env:
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          mkdir -p data
+          echo "[" > data/projects1.json
 
-        # Fetch public repos
-        curl -s "https://api.github.com/users/$USERNAME/repos?per_page=100" |
-        jq '[.[] | { name: .name, repo: .html_url }]' > data/projects1.json
+          repos=$(curl -s "https://api.github.com/users/$USERNAME/repos?per_page=100")
 
-        echo "Result:"
-        cat data/projects1.json
+          first=true
+          for row in $(echo "$repos" | jq -r '.[] | @base64'); do
+            _jq() {
+              echo "$row" | base64 --decode | jq -r "$1"
+            }
 
-    - name: Commit and push
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git add data/projects1.json
-        git commit -m "Update: Basic repo list in projects.json" || echo "No changes"
-        git push
+            repo_name=$(_jq '.name')
+            description=$(_jq '.description')
+            repo_url=$(_jq '.html_url')
+            homepage=$(_jq '.homepage')
+            created_at=$(_jq '.created_at')
+            year=$(date -d "$created_at" +%Y)
+
+            readme_url="https://raw.githubusercontent.com/$USERNAME/$repo_name/main/README.md"
+            name=$(curl -s "$readme_url" | grep -m 1 '^# ' | sed 's/^# //')
+            if [ -z "$name" ]; then
+              name="$repo_name"
+            fi
+
+            gh_pages_url="https://$USERNAME.github.io/$repo_name"
+            if curl -s --head "$gh_pages_url" | grep "200 OK" > /dev/null; then
+              demo="$gh_pages_url"
+            elif [ -n "$homepage" ] && [ "$homepage" != "null" ]; then
+              demo="$homepage"
+            else
+              demo="$repo_url"
+            fi
+
+            langs=$(curl -s "https://api.github.com/repos/$USERNAME/$repo_name/languages" | jq -r 'keys | @json')
+            tags=$(curl -s -H "Accept: application/vnd.github.mercy-preview+json" "https://api.github.com/repos/$USERNAME/$repo_name/topics" | jq -r '.names | @json')
+            img="https://github.com/$USERNAME/$repo_name/blob/main/$repo_name.png?raw=true"
+
+            if [ "$first" = true ]; then
+              first=false
+            else
+              echo "," >> data/projects1.json
+            fi
+
+            echo "  {" >> data/projects1.json
+            echo "    \"name\": \"$name\"," >> data/projects1.json
+            echo "    \"description\": \"$description\"," >> data/projects1.json
+            echo "    \"demo\": \"$demo\"," >> data/projects1.json
+            echo "    \"repo\": \"$repo_url\"," >> data/projects1.json
+            echo "    \"tags\": $tags," >> data/projects1.json
+            echo "    \"year\": $year," >> data/projects1.json
+            echo "    \"img\": \"$img\"," >> data/projects1.json
+            echo "    \"lang\": $langs" >> data/projects1.json
+            echo "  }" >> data/projects1.json
+          done
+
+          echo "]" >> data/projects1.json
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/projects1.json
+          git commit -m "Update data/projects1.json" || echo "No changes"
+          git push
