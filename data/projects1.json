@@ -33,7 +33,7 @@
   }
 ,
   {
-    "name": "ppp ",
+    "name": "ppp",
     "description": "An objected oriented programming language designed for educational purposes with ANTLR",
     "demo": "https://github.com/thppn/ppp",
     "repo": "https://github.com/thppn/ppp",
