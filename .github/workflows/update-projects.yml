@@ -1,12 +1,33 @@
-name: Test Action
+name: Update Projects
 
 on:
   workflow_dispatch:
 
 jobs:
-  test-job:
+  update-projects:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Hello
-        run: echo "Hello from GitHub Actions!"
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Fetch public repos and write minimal JSON
+      env:
+        USERNAME: ${{ github.repository_owner }}
+      run: |
+        mkdir -p data
+
+        # Fetch public repos
+        curl -s "https://api.github.com/users/$USERNAME/repos?per_page=100" |
+        jq '[.[] | { name: .name, repo: .html_url }]' > data/projects1.json
+
+        echo "Result:"
+        cat data/projects1.json
+
+    - name: Commit and push
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add data/projects.json
+        git commit -m "Update: Basic repo list in projects.json" || echo "No changes"
+        git push
