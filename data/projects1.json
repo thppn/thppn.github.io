@@ -1,30 +1,78 @@
 [
   {
-    "name": "ai",
-    "repo": "https://github.com/thppn/ai"
-  },
+    "name": "AI projects <!-- https://github.com/thppn/ai/blob/main/ai.png?raw=true -->",
+    "description": "Various projects related to artificial intelligence including machine learning",
+    "demo": "https://github.com/thppn/ai",
+    "repo": "https://github.com/thppn/ai",
+    "tags": ["kmeans","minimax","minimax-alpha-beta-pruning","mlp","ucs-algorithm"],
+    "year": 2025,
+    "img": "https://github.com/thppn/ai/blob/main/ai.png?raw=true",
+    "lang": ["C","Java","Python"]
+  }
+,
   {
-    "name": "igem",
-    "repo": "https://github.com/thppn/igem"
-  },
+    "name": "iGEM Ioannina 2021 <!-- https://github.com/thppn/igem/blob/main/website/img/igem.gif?raw=true -->",
+    "description": "All the resources for the iGEM competition 2020-2021, focusing on synthetic biology and web development.",
+    "demo": "https://thppn.github.io/igem/",
+    "repo": "https://github.com/thppn/igem",
+    "tags": ["biology","frontend"],
+    "year": 2025,
+    "img": "https://github.com/thppn/igem/blob/main/igem.png?raw=true",
+    "lang": ["CSS","HTML","JavaScript","SCSS"]
+  }
+,
   {
-    "name": "minimalpp",
-    "repo": "https://github.com/thppn/minimalpp"
-  },
+    "name": "minimal++ <!-- https://github.com/thppn/minimalpp/blob/main/doc/minimal++.png?raw=true -->",
+    "description": "A simple programming language for MIPS designed for educational purposes",
+    "demo": "https://github.com/thppn/minimalpp",
+    "repo": "https://github.com/thppn/minimalpp",
+    "tags": ["compilers","mips-assembly"],
+    "year": 2025,
+    "img": "https://github.com/thppn/minimalpp/blob/main/minimalpp.png?raw=true",
+    "lang": ["Python"]
+  }
+,
   {
-    "name": "ppp",
-    "repo": "https://github.com/thppn/ppp"
-  },
+    "name": "ppp <!-- https://github.com/thppn/ppp/blob/main/ppp.png?raw=true -->",
+    "description": "An objected oriented programming language designed for educational purposes with ANTLR",
+    "demo": "https://github.com/thppn/ppp",
+    "repo": "https://github.com/thppn/ppp",
+    "tags": ["antlr4-python3","compilers","oop-concepts"],
+    "year": 2025,
+    "img": "https://github.com/thppn/ppp/blob/main/ppp.png?raw=true",
+    "lang": ["ANTLR","Python"]
+  }
+,
   {
-    "name": "telescope",
-    "repo": "https://github.com/thppn/telescope"
-  },
+    "name": "telescope <!-- https://github.com/thppn/telescope/blob/main/logo.png?raw=true -->",
+    "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
+    "demo": "https://github.com/thppn/telescope",
+    "repo": "https://github.com/thppn/telescope",
+    "tags": ["antlr4-python3","compilers","turing-machines"],
+    "year": 2025,
+    "img": "https://github.com/thppn/telescope/blob/main/telescope.png?raw=true",
+    "lang": []
+  }
+,
   {
-    "name": "the_odin_project",
-    "repo": "https://github.com/thppn/the_odin_project"
-  },
+    "name": "The Odin Project <!-- https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/logo.svg?raw=true -->",
+    "description": "A comprehensive web development curriculum that covers HTML, CSS, JavaScript, Git, and more.",
+    "demo": "https://thppn.github.io/the_odin_project/",
+    "repo": "https://github.com/thppn/the_odin_project",
+    "tags": ["frontend","git","pair-programming"],
+    "year": 2025,
+    "img": "https://github.com/thppn/the_odin_project/blob/main/the_odin_project.png?raw=true",
+    "lang": ["CSS","HTML","JavaScript"]
+  }
+,
   {
-    "name": "thppn.github.io",
-    "repo": "https://github.com/thppn/thppn.github.io"
+    "name": "thppn.github.io <!-- https://github.com/thppn/thppn.github.io/blob/main/images/logo.png?raw=true -->",
+    "description": "Personal webpage",
+    "demo": "https://thppn.github.io/",
+    "repo": "https://github.com/thppn/thppn.github.io",
+    "tags": ["particlesjs","typed-js"],
+    "year": 2022,
+    "img": "https://github.com/thppn/thppn.github.io/blob/main/thppn.github.io.png?raw=true",
+    "lang": ["CSS","HTML","JavaScript"]
   }
 ]
