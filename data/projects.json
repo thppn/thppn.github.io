@@ -42,8 +42,8 @@
   {
     "name": "telescope",
     "description": "My thesis for the Computer Science & Engineering Department at the University of Ioannina",
-    "demo": "",
-    "repo": "",
+    "demo": "https://github.com/thppn/telescope",
+    "repo": "https://github.com/thppn/telescope",
     "tags":  ["Compilers", "OOP-concepts", "antlr4-python3"],
     "year": 2024,
     "img": "https://github.com/thppn/telescope/blob/main/logo.png?raw=true",
