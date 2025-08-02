@@ -1,5 +1,5 @@
 :root {
-  --size: 27rem;
+  --size: 24rem;
   --lb: rgba(0, 0, 0, 0.5);
 }
 
@@ -58,7 +58,7 @@ span {
 .lang ul li,
 .tech ul li {
   list-style: none;
-  max-width: 7rem;
+  max-width: 5.5rem;
 
 }
 .tech {
