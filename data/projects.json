@@ -22,6 +22,17 @@
   }
 ,
   {
+    "name": "Java projects",
+    "description": "null",
+    "demo": "https://github.com/thppn/java",
+    "repo": "https://github.com/thppn/java",
+    "tags": ["design-patterns","oops-in-java"],
+    "year": 2019,
+    "img": "https://github.com/thppn/java/java.png",
+    "lang": ["Java"]
+  }
+,
+  {
     "name": "minimal++",
     "description": "A simple programming language for MIPS designed for educational purposes",
     "demo": "https://github.com/thppn/minimalpp",
@@ -40,7 +51,7 @@
     "tags": ["antlr4-python3","compilers","oop-concepts"],
     "year": 2022,
     "img": "https://github.com/thppn/ppp/blob/main/ppp.png?raw=true",
-    "lang": ["ANTLR","Python"]
+    "lang": ["ANTLR","Dockerfile","Python"]
   }
 ,
   {
