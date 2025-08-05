@@ -12,10 +12,10 @@
 ,
   {
     "name": "mdrop",
-    "description": "null",
+    "description": "Shell commands for using droplets",
     "demo": "https://github.com/thppn/droplets",
     "repo": "https://github.com/thppn/droplets",
-    "tags": [],
+    "tags": ["droplets","markdown"],
     "year": 2025,
     "img": "https://github.com/thppn/droplets/blob/main/mdrop.png?raw=true",
     "lang": ["Python","Shell"]
