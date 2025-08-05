@@ -139,7 +139,12 @@ a {
     border-radius: 0.3rem;
     filter: invert(1); /* Invert logo colors */
     margin: 0.5rem;
+    transition: .7s;
 }
+.navbar-logo:hover {
+  transform: rotateY(180deg);
+}
+
 .navbar-title {
     font-size: 1.2rem;
     font-weight: 600;
