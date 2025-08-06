@@ -11,6 +11,17 @@
   }
 ,
   {
+    "name": "mdrop",
+    "description": "Shell commands for using droplets",
+    "demo": "https://github.com/thppn/droplets",
+    "repo": "https://github.com/thppn/droplets",
+    "tags": ["droplets","markdown"],
+    "year": 2025,
+    "img": "https://github.com/thppn/droplets/blob/main/mdrop.png?raw=true",
+    "lang": ["Python","Shell"]
+  }
+,
+  {
     "name": "iGEM Ioannina 2021",
     "description": "All the resources for the iGEM competition 2020-2021, focusing on synthetic biology and web development.",
     "demo": "https://thppn.github.io/igem/",
@@ -23,7 +34,7 @@
 ,
   {
     "name": "Java projects",
-    "description": "null",
+    "description": "Java educational projects demonstrating design patterns and testing practices",
     "demo": "https://github.com/thppn/java",
     "repo": "https://github.com/thppn/java",
     "tags": ["design-patterns","oops-in-java"],
