@@ -78,18 +78,14 @@
   background: #3b5999;
 }
 
-.site-footer ul li:nth-child(3) a:before{
-  background: black;
-}
-
-.site-footer ul li:nth-child(4) a:before {
+.site-footer ul li:nth-child(3) a:before {
   background: #0077b5;
 }
 
-.site-footer ul li:nth-child(5) a:before {
+.site-footer ul li:nth-child(4) a:before {
   background: black;
 }
 
-.site-footer ul li:nth-child(6) a:before {
+.site-footer ul li:nth-child(5) a:before {
   background: #89e219;
 }
