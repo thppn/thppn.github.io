@@ -89,3 +89,7 @@
 .site-footer ul li:nth-child(5) a:before {
   background: black;
 }
+
+.site-footer ul li:nth-child(6) a:before {
+  background: #89e219;
+}
