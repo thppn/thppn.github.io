@@ -4,6 +4,7 @@
 }
 
 .project-container {
+  position: relative;
   width: var(--size);
   height: var(--size);
   display: grid;
