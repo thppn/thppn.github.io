@@ -4,7 +4,7 @@
     "description": "Various projects related to artificial intelligence including machine learning",
     "demo": "https://github.com/thppn/ai",
     "repo": "https://github.com/thppn/ai",
-    "tags": ["kmeans","minimax","minimax-alpha-beta-pruning","mlp","ucs-algorithm"],
+    "tags": ["kmeans","minimax-alpha-beta-pruning","mlp","search"],
     "year": 2019,
     "img": "https://github.com/thppn/ai/blob/main/ai.png?raw=true",
     "lang": ["C","Java","Python"]
