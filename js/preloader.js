@@ -1,6 +1,5 @@
 // script.js
 const preloader = document.getElementById("preloader");
-const content = document.getElementById("content");
 
 const minTime = 2000; // 2s minimum
 const start = Date.now();
@@ -8,7 +7,7 @@ const start = Date.now();
 window.addEventListener("load", function() {
   const elapsed = Date.now() - start;
 
-  function showPage() {
+  function revealPage() {
     preloader.classList.add("hidden");
     // setTimeout(() => {
     //   content.classList.add("visible");
@@ -95,8 +94,8 @@ window.addEventListener("load", function() {
   }
 
   if (elapsed < minTime) {
-    setTimeout(showPage, minTime - elapsed);
+    setTimeout(revealPage, minTime - elapsed);
   } else {
-    showPage();
+    revealPage();
   }
 });
