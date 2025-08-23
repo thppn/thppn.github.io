@@ -10,9 +10,9 @@ window.addEventListener("load", function() {
 
   function showPage() {
     preloader.classList.add("hidden");
-    setTimeout(() => {
-      content.classList.add("visible");
-    }, 800); // wait until fade-out finishes
+    // setTimeout(() => {
+    //   content.classList.add("visible");
+    // }, 800); // wait until fade-out finishes
   }
 
   if (elapsed < minTime) {
