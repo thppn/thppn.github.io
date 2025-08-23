@@ -1,0 +1,57 @@
+/* Fullscreen preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loader-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo itself with glowing pulse */
+.preloader-logo {
+  width: 120px;
+  animation: pulseGlow 2s infinite;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.2));
+}
+
+/* Rotating ring around logo */
+.ring {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 5px solid #0f0f0e;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+  0%   { transform: scale(1);}
+  50%  { transform: scale(1.05);}
+  100% { transform: scale(1); }
+}
+
+/* Hide preloader after load */
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

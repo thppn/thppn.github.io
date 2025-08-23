@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="styles/footer.css">
 	<link rel="stylesheet" href="styles/projects.css">
 	<link rel="stylesheet" href="styles/links.css">
+	<link rel="stylesheet" href="styles/preloader.css">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://cdnjs.cloudflare.com https://raw.githubusercontent.com/thppn https://github.com; style-src 'self' https://cdnjs.cloudflare.com https://raw.githubusercontent.com/thppn https://github.com 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com/thppn https://github.com; img-src 'self' https://raw.githubusercontent.com/thppn https://github.com;">
 
 
@@ -19,6 +20,12 @@
 	<link rel="icon" href="images/logo.ico">
 </head>
 <body>
+	<div id="preloader">
+  <div class="loader-wrapper">
+    <img src="images/logo.png" alt="Logo" class="preloader-logo">
+    <div class="ring"></div>
+  </div>
+</div>
     <nav class="navbar">
         <div class="navbar-brand">
             <img src="images/logo.png" alt="Logo" class="navbar-logo">
@@ -63,6 +70,7 @@
     <script src="js/typed.js"></script>
     <script src="js/timeline.js"></script>
     <script src="js/slider.js"></script>
+	<script src="js/preloader.js"></script>
     <script src="js/navbar.js"></script>
     <footer class="site-footer">
 		<ul>
